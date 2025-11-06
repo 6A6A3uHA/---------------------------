@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="site">
+        <div class="fixedcontent">
+            <div class="button">
+                <button class="nologin hide" id="btn_test">Тест</button>
+                <button class="nologin hide" id="old_try">Прошлые попытки</button>
+                <button id="leader_board">Таблица лидеров</button>
+            </div>
+
+            <div class="account">
+                <div class="nologin hide" id="account"></div>
+                <button class="nologin hide" id="logout">Выйти из аккаунта</button>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="hide look" id="reg">
+            
+
+            <div class="form">
+                <form name="form_account" novalidate>
+                    <h2>Введите свои данные</h2>
+
+                    <div class="row">
+                        <p>Введите Имя: </p>
+
+                        <div>
+                            <input type="text" name="name" minlength="2" maxlength="10" placeholder="Имя" required>
+                            <div class="err">Не верно введено имя</div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <p>Ваша дата рождения: </p>
+                        <div>
+                            <input type="text" name="date" placeholder="dd.mm.yyyy" required>
+                            <div class="err">Не верно введена дата</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <p>Ваш пол:</p>
+
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><input type="radio" name="sex" value="0" checked>Не выбрано</li>
+                                    <li><input type="radio" name="sex" value="Мужской">Мужской</li>
+                                    <li><input type="radio" name="sex" value="Женский">Женский</li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <div class="err">Не выбран пол</div>
+                    </div>
+
+                    <div class="center"><input type="submit" value="Регистрация"></div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class="hide" id="test">
+            
+        </div>
+
+        <div class="hide" id="result">
+
+        </div>
+
+
+        <div class="delete"><button id="delete">Очистить данные</button></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

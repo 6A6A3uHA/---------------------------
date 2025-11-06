@@ -1,0 +1,86 @@
+:root{
+    --position: 0px;
+    --transition: 1s;
+}
+body{
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 50px auto;
+}
+ .slides{
+    display: flex;
+    transform: translateX(var(--position));
+    transition: var(--transition);
+ }
+ .img{
+    width: 1200px;
+    height: 800px;
+    margin-right: 20px;
+ }
+ .wrapper{
+    width: 1200px;
+    height: 800px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.btnd{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    background-color: blueviolet;
+    color: whitesmoke;
+    font-size: 40px;
+    border-radius: 15px;
+}
+.red{
+    color: red;
+}
+
+.green{
+    color: lightgreen;
+}
+.yellow{
+    color: yellow;
+}
+
+.inp{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#inp{
+    margin: 20px;
+    width: 100px;
+    height: 20px;
+}
+
+#binp{
+    margin: 20px;
+    width: 150px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: blueviolet;
+}
+#res{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

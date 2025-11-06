@@ -1,0 +1,136 @@
+.site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+}
+
+.hide{
+    display: none;
+}
+
+.nologin{
+}
+
+.look{
+    display: flex;
+    flex-flow: column;
+}
+
+.form{
+    max-width: 500px;
+}
+
+.row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.err{
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    color: red;
+    height: 0;
+    overflow: hidden;
+    align-items: center;
+}
+
+.showup{
+    height: 20px;
+    border: 3px solid red;
+    border-top: 0px;
+}
+.showleft{
+    height: 60px;
+    border: 3px solid red;
+    border-left: 0;
+}
+
+.fixedcontent{
+    width: 100%;
+    height: 100%;
+    margin: 50px;
+}
+
+.account{
+    display: flex;
+    justify-content: end;
+    left: 70%;
+    top: 20px;
+    position: fixed;
+    align-items: center;
+    overflow: hidden;
+}
+#account{
+    display: flex;
+    justify-content: end;
+    text-align: right;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    top: 20px;
+    position: fixed;
+    width: 100%;
+    
+}
+
+button{
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: rgb(206, 247, 247);
+}
+
+input[type=submit]{
+    border-radius:20px;
+    border: 1px solid black;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(206, 247, 247);
+}
+
+#test{
+    margin-bottom: 200px;
+}
+#result{
+    justify-content: center;
+    align-items: center;
+}
+
+.delete{
+    display: flex;
+    justify-content: end;
+    left: 70%;
+    bottom: 20px;
+    position: fixed;
+    align-items: center;
+    overflow: hidden;
+}
+
+.green{
+    border: 3px solid green;
+    border-radius: 5px;
+}
+
+.red{
+    min-height: 20px;
+    border: 3px solid red;
+    border-radius: 5px;
+}
